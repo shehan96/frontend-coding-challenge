@@ -1,0 +1,14 @@
+.navbar .navbar-brand,.nav-link{
+    color: #fff !important;
+    transition: 0.1s;
+}
+
+.navbar .navbar-brand:hover{
+    color: #333 !important;
+    text-decoration: underline !important;
+}
+
+.navbar .nav-link:hover{
+    color: #333 !important;
+    text-decoration: underline !important;
+}
