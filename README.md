@@ -1,4 +1,4 @@
-## Frontend Coding Challenge
+## Frontend Coding Challenge :writing_hand:
 
 ### Project Details
 
@@ -15,7 +15,7 @@ This project is to implement a small webapp that will list the most starred Gith
 1. Angular 8+
 2. Bootstrap 4
 
-### How to run the project
+:question: ### How to run the project
 (before all these steps you must have node js and angular cli installed)
 1. Navigate inside the project `cd frontend-coding-challenge`
 2. Run `npm install`
