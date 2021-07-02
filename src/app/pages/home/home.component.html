@@ -1,1 +1,11 @@
-<p>home works!</p>
+<!-- repo item box list -->
+<div class="container">
+    <app-repo-item-box *ngFor="let repo of repoList" 
+        [repoName]="repo.name"
+        [repoDesc]="repo.description"
+        [repoImg]="repo.avatar_url" 
+        [repoStars]="repo.stars" 
+        [repoIssues]="repo.issues"
+        [repoTimeInterval]="repo.created_at">
+    </app-repo-item-box>
+</div>

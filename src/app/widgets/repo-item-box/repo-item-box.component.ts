@@ -11,13 +11,40 @@ export class RepoItemBoxComponent implements OnInit {
   @Input() repoName : string;
   @Input() repoImg : string;
   @Input() repoDesc : string;
-  @Input() repoStars : string;
-  @Input() repoIssues : string;
-  repoTimeInterval : string = 'Submitted 30 days ago by Tensserflow';
+  @Input() repoStars : number;
+  @Input() repoIssues : number;
+  @Input() repoTimeInterval : string;
+
+  repoStarVal : string = '';
+  repoIssuesVal : string = '';
 
   constructor() { }
 
   ngOnInit(): void {
+    this.generateRepoStarValue();
+    this.generateRepoIssuesValue();
+  }
+
+  // method to generate repo star value
+  generateRepoStarValue(){
+    if(this.repoStars > 999){
+      this.repoStars = this.repoStars / 1000;
+      this.repoStarVal = this.repoStars + 'k';
+    }
+    else {
+      this.repoStarVal = ''+this.repoStars;
+    }
+  }
+
+  // method to generate repo issues value
+  generateRepoIssuesValue(){
+    if(this.repoIssues > 999){
+      this.repoIssues = this.repoIssues / 1000;
+      this.repoIssuesVal = this.repoIssues + 'k';
+    }
+    else {
+      this.repoIssuesVal = ''+this.repoIssues;
+    }
   }
 
 }
