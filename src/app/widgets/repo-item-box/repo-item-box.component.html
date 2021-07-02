@@ -1,0 +1,23 @@
+<div class="repo-item-box border-box">
+    <!-- repo item ox image -->
+    <div class="repo-img-container">
+        <img [src]="repoImg" alt="repo image" />
+    </div>
+    <!-- repo item box content -->
+    <div class="repo-content-container">
+        <h3>{{repoName}}</h3>
+        <p>{{repoDesc}}</p>
+        <!-- repo item box bottom -->
+        <div class="repo-item-box-bottom">
+            <div class="repo-stars border-box mr-16">
+                <p>Stars: {{repoStars}}</p>
+            </div>
+            <div class="repo-issues border-box mr-16">
+                <p>Issues: {{repoIssues}}</p>
+            </div>
+            <div class="repo-timeinterval mr-16">
+                <p>{{repoTimeInterval}}</p>
+            </div>
+        </div>
+    </div>
+</div>

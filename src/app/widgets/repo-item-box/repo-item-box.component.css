@@ -1,0 +1,43 @@
+.repo-item-box{
+    display: flex;
+    padding: 16px 32px;
+    margin: 16px 32px;
+    box-shadow: 2px 2px 10px 0px #d4d4d4;
+}
+
+.repo-img-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.repo-img-container img{
+    width: 100px;
+}
+
+.repo-content-container{
+    flex: 2;
+}
+
+.repo-item-box-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mr-16{
+    margin-right: 16px !important;
+}
+
+.repo-item-box-bottom p{
+    margin: 0 !important;
+}
+
+.border-box{
+    border: 1px solid #000;
+}
+
+.repo-stars,.repo-issues{
+    padding: 4px 8px;
+}
